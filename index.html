@@ -8,10 +8,33 @@
  <title>Document</title>
 </head>
 <body>
- <h1>V</h1>
- <h1>O</h1>
- <h1>T</h1>
- <h1>E</h1>
+ <div id="vote">
+  <h1 id="v">V</h1>
+  <h1 id="o">O</h1>
+  <h1 id="t">T</h1>
+  <h1 id="">E</h1>
+ </div>
+ <div id="button">
+  <button><a onclick="document.getElementById('field').style.display='block'" style="width:auto;">Vote Here</a></button>
+ </div>
+ <div id="field" class="modal">
+ 
+  <form class="modal-content animate">
+   <div class="imgcontainer">
+    <span onclick="document.getElementById('field').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <img src="nixon.png" alt="Avatar" class="avatar">
+    <img src="louis.png" alt="Avatar" class="avatar">
+   </div>
+ 
+   <div class="container">
+    <label id="k1" for="uname"><b>NIXON</b></label>
+    <br>
+    <button id="l1"  name="uname" required>VOTE</button>
+ 
+    <label id="k2" for="psw"><b>Master Overseer Arch Bishop Supreme Coding Leader Pope King God Louis the I of Earth</b></label>
+    <br>
+    <button style="position: absolute" id="ball">Don't Vote</button>
+   </div>
  <script src="index.js"></script>
 </body>
 </html>
