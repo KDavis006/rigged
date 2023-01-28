@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <meta lang="EN">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
  <title>Document</title>
 </head>
-<body>
+<body onload="spin()">
  <div id="vote">
   <h1 id="v">V</h1>
   <h1 id="o">O</h1>
   <h1 id="t">T</h1>
-  <h1 id="">E</h1>
+  <h1 id="e">E</h1>
  </div>
  <div id="button">
   <button><a onclick="document.getElementById('field').style.display='block'" style="width:auto;">Vote Here</a></button>
  </div>
+
+ <div id="votesContainer">
+  <label for=""><strong>Nixon votes : <label id="nVotes"></label></strong></label> 
+  <label for=""><strong>Louis votes : <label id="lVotes"></label></strong></label>
+ </div>
  <div id="field" class="modal">
  
-  <form class="modal-content animate">
+  <div class="modal-content animate">
    <div class="imgcontainer">
     <span onclick="document.getElementById('field').style.display='none'" class="close" title="Close Modal">&times;</span>
     <img src="nixon.png" alt="Avatar" class="avatar">
@@ -29,12 +35,13 @@
    <div class="container">
     <label id="k1" for="uname"><b>NIXON</b></label>
     <br>
-    <button id="l1"  name="uname" required>VOTE</button>
+    <button id="l1"  name="uname" onclick="yes()">VOTE</button>
  
     <label id="k2" for="psw"><b>Master Overseer Arch Bishop Supreme Coding Leader Pope King God Louis the I of Earth</b></label>
     <br>
     <button style="position: absolute" id="ball" onclick="no()">Don't Vote</button>
    </div>
+  </div>
  <script src="index.js"></script>
 </body>
 </html>

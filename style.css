@@ -1,5 +1,10 @@
+body{
+ background-image: linear-gradient(to left, white, blue, red);
+}
+
 h1{
  transition: all 3s;
+
 }
 
 body {
@@ -54,6 +59,24 @@ img.avatar {
 #k2{
  float:right;
  width: 40vw;
+}
+#v , #o , #t , #e{
+ transition: all 3s;
+ position: absolute;
+  font-size: 8rem;
+}
+#v{
+
+}
+#o{
+ left: 98vw;
+}
+#t{
+ bottom:1vh;
+}
+#e{
+ bottom: 1vh;
+ right: 2vw;
 }
 #container {
  padding: 16px;
@@ -154,5 +177,22 @@ span.psw {
 }
 
 #ball{
+ position: absolute;
  transition: all 2s;
+ left: 1000px;
+}
+
+#button{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ height:90vh;
+ right:50vw;
+ bottom:50vh;
+}
+
+#votesContainer{
+ display: flex;
+ justify-content: space-evenly;
+ font-size: xx-large;
 }
